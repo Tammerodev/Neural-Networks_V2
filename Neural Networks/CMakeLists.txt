@@ -9,6 +9,8 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # Compiler flags
 set(CMAKE_C_FLAGS_RELEASE "-O3")
 
+find_package(OpenGL REQUIRED)
+
 FetchContent_Declare(
   SFML
   URL "https://github.com/SFML/SFML/archive/3.0.2.zip"
@@ -31,18 +33,27 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(sfml)
 FetchContent_MakeAvailable(imgui)
 
+# Tell imgui-sfml where ImGui is
 set(IMGUI_DIR ${imgui_SOURCE_DIR})
 option(IMGUI_SFML_FIND_SFML "Use find_package to find SFML" ON)
 option(IMGUI_SFML_IMGUI_DEMO "Build imgui_demo.cpp" OFF)
 
+# Now make imgui-sfml available
+FetchContent_MakeAvailable(imgui-sfml)
+
+# Then link everything
 target_link_libraries(${PROJECT_NAME} PRIVATE
     sfml-system
     sfml-window
     sfml-graphics
     sfml-network
     sfml-audio
+    ImGui-SFML::ImGui-SFML
+    OpenGL::GL
 )
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-
-FetchContent_MakeAvailable(imgui-sfml)
+target_include_directories(${PROJECT_NAME} PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${imgui_SOURCE_DIR}          # for imgui.h
+    ${imgui-sfml_SOURCE_DIR}
+)

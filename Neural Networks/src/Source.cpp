@@ -5,6 +5,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Main.hpp>
 
+#include "../../build/_deps/imgui-src/imgui.h"
+#include "../../build/_deps/imgui-sfml-src/imgui-SFML.h"
+
 #include <thread>
 #include <iostream>
 #include <math.h>
@@ -152,14 +155,16 @@ null_catch_init_entities:
 		}
 	}
 }
-                                                                                                    
+
+sf::Clock deltaClock;                                                                                                 
 
 int main(){
+	ImGui::SFML::Init(window);
+
 	int _map = 0;
 	walls_texture.loadFromFile("img/wall.png");
 
 	sf::Image map;
-
 
 	{
 		using std::cout;
@@ -237,6 +242,8 @@ int main(){
 				window.close();
 			}
 
+			ImGui::SFML::ProcessEvent(window, *ev);
+
 			// first neuron is distance to goal!
 			
 			for(auto& e : entities) {
@@ -309,6 +316,18 @@ int main(){
 				[](const std::unique_ptr<AIEntity>& o) { return o->hp == 0 || o == nullptr; }),
 			entities.end());
 
+			
+
+		// Dear ImGUI graphics:
+		ImGui::SFML::Update(window, deltaClock.restart());
+		ImGui::ShowDemoWindow();
+
+
+        ImGui::Begin("Hello, world!");
+        ImGui::Button("Look at this pretty button");
+        ImGui::End();
+		
+       	ImGui::SFML::Render(window);
 		window.display();
 	}
 	return 0;

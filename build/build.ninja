@@ -47,13 +47,13 @@ cmake_ninja_workdir = /home/lauri/Documents/Neural-Networks-master/build/
 #############################################
 # Order-only phony target for NeuralNetworks
 
-build cmake_object_order_depends_target_NeuralNetworks: phony || cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-network cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
+build cmake_object_order_depends_target_NeuralNetworks: phony || cmake_object_order_depends_target_ImGui-SFML cmake_object_order_depends_target_sfml-audio cmake_object_order_depends_target_sfml-graphics cmake_object_order_depends_target_sfml-network cmake_object_order_depends_target_sfml-system cmake_object_order_depends_target_sfml-window
 
 build CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o: CXX_COMPILER__NeuralNetworks_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/Neural$ Networks/src/Source.cpp || cmake_object_order_depends_target_NeuralNetworks
-  DEFINES = -DSFML_STATIC
+  DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
   DEP_FILE = CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I"/home/lauri/Documents/Neural-Networks-master/Neural Networks/include" -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include
+  INCLUDES = -I"/home/lauri/Documents/Neural-Networks-master/Neural Networks/include" -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = CMakeFiles/NeuralNetworks.dir
   OBJECT_FILE_DIR = CMakeFiles/NeuralNetworks.dir/src
 
@@ -65,11 +65,11 @@ build CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o: CXX_COMPILER__NeuralNetwor
 #############################################
 # Link the executable NeuralNetworks
 
-build NeuralNetworks: CXX_EXECUTABLE_LINKER__NeuralNetworks_Debug CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o | _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-network-s-d.a _deps/sfml-build/lib/libsfml-audio-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a /usr/lib64/libXrandr.so /usr/lib64/libXcursor.so /usr/lib64/libXrender.so /usr/lib64/libXfixes.so /usr/lib64/libXi.so /usr/lib64/libXext.so /usr/lib64/libX11.so /usr/lib64/libGL.so /usr/lib64/libudev.so /usr/lib64/libfreetype.so _deps/sfml-build/lib/libsfml-system-s-d.a /usr/lib64/libvorbisfile.so /usr/lib64/libvorbisenc.so /usr/lib64/libvorbis.so /usr/lib64/libogg.so /usr/lib64/libFLAC.so || _deps/sfml-build/lib/libsfml-audio-s-d.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-network-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a
+build NeuralNetworks: CXX_EXECUTABLE_LINKER__NeuralNetworks_Debug CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o | _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-network-s-d.a _deps/sfml-build/lib/libsfml-audio-s-d.a _deps/imgui-sfml-build/libImGui-SFML.a /usr/lib64/libvorbisfile.so /usr/lib64/libvorbisenc.so /usr/lib64/libvorbis.so /usr/lib64/libogg.so /usr/lib64/libFLAC.so _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a /usr/lib64/libXrandr.so /usr/lib64/libXcursor.so /usr/lib64/libXrender.so /usr/lib64/libXfixes.so /usr/lib64/libXi.so /usr/lib64/libXext.so /usr/lib64/libX11.so /usr/lib64/libudev.so /usr/lib64/libfreetype.so /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so || _deps/imgui-sfml-build/libImGui-SFML.a _deps/sfml-build/lib/libsfml-audio-s-d.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-network-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a
   DEP_FILE = CMakeFiles/NeuralNetworks.dir/link.d
   FLAGS = -g
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/NeuralNetworks.dir/link.d
-  LINK_LIBRARIES = _deps/sfml-build/lib/libsfml-system-s-d.a  _deps/sfml-build/lib/libsfml-window-s-d.a  _deps/sfml-build/lib/libsfml-graphics-s-d.a  _deps/sfml-build/lib/libsfml-network-s-d.a  _deps/sfml-build/lib/libsfml-audio-s-d.a  _deps/sfml-build/lib/libsfml-window-s-d.a  /usr/lib64/libXrandr.so  /usr/lib64/libXcursor.so  /usr/lib64/libXrender.so  /usr/lib64/libXfixes.so  /usr/lib64/libXi.so  /usr/lib64/libXext.so  /usr/lib64/libX11.so  /usr/lib64/libGL.so  /usr/lib64/libudev.so  /usr/lib64/libfreetype.so  _deps/sfml-build/lib/libsfml-system-s-d.a  -lrt  -ldl  /usr/lib64/libvorbisfile.so  /usr/lib64/libvorbisenc.so  /usr/lib64/libvorbis.so  /usr/lib64/libogg.so  /usr/lib64/libFLAC.so
+  LINK_LIBRARIES = _deps/sfml-build/lib/libsfml-system-s-d.a  _deps/sfml-build/lib/libsfml-window-s-d.a  _deps/sfml-build/lib/libsfml-graphics-s-d.a  _deps/sfml-build/lib/libsfml-network-s-d.a  _deps/sfml-build/lib/libsfml-audio-s-d.a  _deps/imgui-sfml-build/libImGui-SFML.a  /usr/lib64/libvorbisfile.so  /usr/lib64/libvorbisenc.so  /usr/lib64/libvorbis.so  /usr/lib64/libogg.so  /usr/lib64/libFLAC.so  _deps/sfml-build/lib/libsfml-graphics-s-d.a  _deps/sfml-build/lib/libsfml-window-s-d.a  _deps/sfml-build/lib/libsfml-system-s-d.a  -lrt  /usr/lib64/libXrandr.so  /usr/lib64/libXcursor.so  /usr/lib64/libXrender.so  /usr/lib64/libXfixes.so  /usr/lib64/libXi.so  /usr/lib64/libXext.so  /usr/lib64/libX11.so  /usr/lib64/libudev.so  -ldl  /usr/lib64/libfreetype.so  /usr/lib64/libGLX.so  /usr/lib64/libOpenGL.so
   OBJECT_DIR = CMakeFiles/NeuralNetworks.dir
   POST_BUILD = :
   PRE_LINK = :
