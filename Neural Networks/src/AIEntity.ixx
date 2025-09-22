@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <algorithm>
 
 #include "NeuralNet.ixx"
 
@@ -33,12 +34,17 @@ struct AIEntity {
 
 	void createBased(const NeuralNet &ne) {
 		// 50% either get randomized by some amount, and 49.92 dont get any effect
-		if(rand() % 2) 
+		isDirectCopy = true;
+
+		if(rand() % 2) {
 			network.initBased(ne, rand() % 30);
+			isDirectCopy = false;
+		}
 
 		// only 0.02% get fully randomized 
 		if((rand() % 50) == 0) {
 			network.initRand();
+			isDirectCopy = false;
 		}
 
 	}
@@ -64,7 +70,7 @@ struct AIEntity {
 		moveY = std::clamp(moveY, -maxSpeed, maxSpeed);
 
 
-		sprite.move(moveX / timeScale, moveY / timeScale);
+		sprite.move(sf::Vector2f(moveX / timeScale, moveY / timeScale));
 
 		sprite.setRotation(viewArea.getRotation());
 
@@ -73,14 +79,14 @@ struct AIEntity {
 
 		if(diffX > diffY) {
 			if(diffX > 0) 
-				sprite.setTextureRect(sf::IntRect(0, 0, 32, 32));
+				sprite.setTextureRect(sf::IntRect(sf::Vector2i(0, isDirectCopy * 32), sf::Vector2i(32, 32)));
 			if(diffX < 0) 
-				sprite.setTextureRect(sf::IntRect(32, 0, 32, 32));
+				sprite.setTextureRect(sf::IntRect(sf::Vector2i(32, isDirectCopy * 32), sf::Vector2i(32, 32)));
 		} else {
 			if(diffY < 0) 
-				sprite.setTextureRect(sf::IntRect(64, 0, 32, 32));
+				sprite.setTextureRect(sf::IntRect(sf::Vector2i(64, isDirectCopy * 32), sf::Vector2i(32, 32)));
 			if(diffY > 0) 
-				sprite.setTextureRect(sf::IntRect(96, 0, 32, 32));
+				sprite.setTextureRect(sf::IntRect(sf::Vector2i(96, isDirectCopy * 32), sf::Vector2i(32, 32)));
 		}
 
 		prev_pos = sprite.getPosition();
@@ -89,11 +95,13 @@ struct AIEntity {
 	sf::Time reachedTime = sf::Time::Zero;
 	int64_t hp = 10;
 	sf::RectangleShape viewArea;
-	sf::Sprite sprite;
+	sf::Sprite sprite = sf::Sprite(texture);
 	sf::Clock timer;
 	NeuralNet network;
 
 	sf::Vector2f prev_pos = {0.f, 0.f};
 
 	bool reachedGoal = false;
+
+	bool isDirectCopy = false;
 };

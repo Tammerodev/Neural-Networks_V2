@@ -3,6 +3,8 @@
 */
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Main.hpp>
+
 #include <thread>
 #include <iostream>
 #include <math.h>
@@ -17,10 +19,6 @@ std::vector<sf::RectangleShape> usedWayPoints;
 
 
 std::vector<std::unique_ptr<AIEntity>> entities;
-
-sf::Font regFont;
-sf::Text text;
-
 
 unsigned long long generation = 0;
 unsigned long long absBestTime = 999999;
@@ -38,10 +36,10 @@ float distance(int x1, int y1, int x2, int y2)
 	return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) * 1.0);
 }
 
-sf::RenderWindow window(sf::VideoMode(800, 800), "Neural networks");
+sf::RenderWindow window(sf::VideoMode({800, 800}), "Neural networks");
 sf::View view;
 
-int frames_per_generation = 800;
+int frames_per_generation = 1600;
 int current_frame = 0;
 
 void checkGen() {
@@ -50,7 +48,7 @@ void checkGen() {
 
 		e->update(timeScale);
 		for (auto& w : wayPoints) {
-			if (e->reachedGoal == false && e->sprite.getGlobalBounds().intersects(w.getGlobalBounds())) {
+			if (e->reachedGoal == false && e->sprite.getGlobalBounds().findIntersection(w.getGlobalBounds())) {
 				if (e->reachedTime == sf::Time::Zero) {
 					e->reachedTime = e->timer.getElapsedTime();
 					e->reachedGoal = true;
@@ -67,7 +65,7 @@ void checkGen() {
 					marker.setSize(sf::Vector2f(8, 8));
 					marker.setOrigin(sf::Vector2f(4, 4));
 					marker.setPosition(e->sprite.getPosition());
-					marker.setRotation(45.f);
+					marker.setRotation(sf::degrees(45.f));
 
 					marker.setFillColor(sf::Color::Green);
 					marker.setOutlineColor(sf::Color::White);
@@ -76,7 +74,7 @@ void checkGen() {
 					usedWayPoints.push_back(marker);
 
 					// Move it out of the view
-					e->sprite.setPosition(-20000.f, -20000.f);
+					e->sprite.setPosition(sf::Vector2f(-20000.f, -20000.f));
 				}
 			}
 		}
@@ -84,86 +82,79 @@ void checkGen() {
 
 	current_frame++;
 
-	text.setString("Generaatio : " + std::to_string(generation)
-	+"\nTeko�lyjen m��r� : " + std::to_string(entities.size())+
-	"\nParas Aika : " + std::to_string(absBestTime) + "ms");
-		if (current_frame >= frames_per_generation * timeScale) {
-			current_frame = 0;
-			AIEntity* bestEntity = nullptr;
-			float best = 9999.f;
+	if (current_frame >= frames_per_generation * timeScale) {
+		current_frame = 0;
+		AIEntity* bestEntity = nullptr;
+		float best = 9999.f;
 
-			for (auto& e : entities) {
-				const float val = e->reachedTime.asSeconds() * e->hp;
+		for (auto& e : entities) {
+			const float val = e->reachedTime.asSeconds() * e->hp;
 
-				if (best > val && e->reachedGoal == true) {
-					best = val;
-					bestEntity = e.get();  // get raw pointer from unique_ptr
+			if (best > val && e->reachedGoal == true) {
+				best = val;
+				bestEntity = e.get();  // get raw pointer from unique_ptr
 
-					std::cout << "bestt chose\n" << bestEntity->reachedGoal;
-				}
-			}
-
-			if(bestEntity == nullptr) {
-				std::cerr << "Nullptr best entity! \n";
-				goto null_catch_init_entities;
-			}
-			else bestEntity->reachedGoal = false;
-
-
-			if(bestEntity == nullptr) {
-null_catch_init_entities:
-				bestEntity = entities.emplace_back(std::make_unique<AIEntity>()).get();
-
-				bestEntity->reachedGoal = false;
-
-				entities.clear();
-				for (int i = 0;i < generation_entity_count;i++) {
-					entities.push_back(std::make_unique<AIEntity>());
-					entities[i]->createRand();
-				}
-
-				std::cout << "\n\nNew generation, NO entity/entities reached goal. there are "<< entities.size() << " entities\n";
-
-			} else {
-				entities.erase(
-					std::remove_if(entities.begin(), entities.end(),
-						[&](const std::unique_ptr<AIEntity>& o) { return o.get() != bestEntity; }),
-					entities.end());
-
-				for (int i = 0;i < generation_entity_count;i++) {
-
-					std::unique_ptr<AIEntity> ai = std::make_unique<AIEntity>();
-					ai->createBased(bestEntity->network);
-					ai->reachedGoal = false;
-					entities.push_back(std::move(ai));
-
-				}
-
-				if (bestEntity->reachedTime != sf::Time::Zero) {
-					if (bestEntity->reachedTime.asMilliseconds() < absBestTime) {
-						absBestTime = bestEntity->reachedTime.asMilliseconds();
-					}
-				}
-
-				bestEntity->reachedGoal = false;
-
-				std::cout << "\n\nNew generation, entity/entities reached goal. there are "<< entities.size() << " entities\n";
-							bestEntity->sprite.setPosition(spawn_point);
-			}
-			generation++;
-
-			for(auto& e: entities) {
-				if(e) e->reachedGoal = false;
+				std::cout << "bestt chose\n" << bestEntity->reachedGoal;
 			}
 		}
 
+		if(bestEntity == nullptr) {
+			std::cerr << "Nullptr best entity! \n";
+			goto null_catch_init_entities;
+		}
+		else bestEntity->reachedGoal = false;
 
+
+		if(bestEntity == nullptr) {
+null_catch_init_entities:
+			bestEntity = entities.emplace_back(std::make_unique<AIEntity>()).get();
+
+			bestEntity->reachedGoal = false;
+
+			entities.clear();
+			for (int i = 0;i < generation_entity_count;i++) {
+				entities.push_back(std::make_unique<AIEntity>());
+				entities[i]->createRand();
+			}
+
+			std::cout << "\n\nNew generation, NO entity/entities reached goal. there are "<< entities.size() << " entities\n";
+
+		} else {
+			entities.erase(
+				std::remove_if(entities.begin(), entities.end(),
+					[&](const std::unique_ptr<AIEntity>& o) { return o.get() != bestEntity; }),
+				entities.end());
+
+			for (int i = 0;i < generation_entity_count;i++) {
+
+				std::unique_ptr<AIEntity> ai = std::make_unique<AIEntity>();
+				ai->createBased(bestEntity->network);
+				ai->reachedGoal = false;
+				entities.push_back(std::move(ai));
+
+			}
+
+			if (bestEntity->reachedTime != sf::Time::Zero) {
+				if (bestEntity->reachedTime.asMilliseconds() < absBestTime) {
+					absBestTime = bestEntity->reachedTime.asMilliseconds();
+				}
+			}
+
+			bestEntity->reachedGoal = false;
+
+			std::cout << "\n\nNew generation, entity/entities reached goal. there are "<< entities.size() << " entities\n";
+						bestEntity->sprite.setPosition(spawn_point);
+		}
+		generation++;
+
+		for(auto& e: entities) {
+			if(e) e->reachedGoal = false;
+		}
+	}
 }
                                                                                                     
 
 int main(){
-	regFont.loadFromFile("Font.ttf");
-	text.setFont(regFont);
 	int _map = 0;
 	walls_texture.loadFromFile("img/wall.png");
 
@@ -209,24 +200,23 @@ int main(){
 	// Load map
 	for (int y = 0;y < map.getSize().y;y++) {
 		for (int x = 0;x < map.getSize().x;x++) {
-			if (map.getPixel(x, y).r >= 250) {
-				sf::Sprite sprite;
+			if (map.getPixel(sf::Vector2u(x, y)).r >= 250) {
+				sf::Sprite sprite = sf::Sprite(walls_texture);
 				sprite.setTexture(walls_texture);
-				sprite.setScale(4.f, 4.f);
-				sprite.setPosition(x * 16, y * 16);
+				sprite.setScale(sf::Vector2f(4.f, 4.f));
+				sprite.setPosition(sf::Vector2f(x * 16, y * 16));
 				walls.push_back(sprite);
 			}
 
-			if (map.getPixel(x, y).b >= 250) {
+			if (map.getPixel(sf::Vector2u(x, y)).b >= 250) {
 				sf::RectangleShape shape;
 				shape.setFillColor(sf::Color::Blue);
-				shape.setPosition(x * 16, y * 16);
+				shape.setPosition(sf::Vector2f(x * 16, y * 16));
 				shape.setSize(sf::Vector2f(16.f, 16.f));
 				wayPoints.push_back(shape);
 			}
 		}
 	}
-	sf::Event ev {};
 
 	loadtexture();
 
@@ -242,8 +232,8 @@ int main(){
 
 		window.clear();
 		window.setView(view);
-		while (window.pollEvent(ev)) {
-			if (ev.type == sf::Event::Closed) {
+		while (const std::optional ev = window.pollEvent()) {
+			if (ev->is<sf::Event::Closed>()) {
 				window.close();
 			}
 
@@ -257,17 +247,17 @@ int main(){
 			}
 
 			timeScale = 1.0f;
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
 				timeScale = 10.f;
-			} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+			} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
 				timeScale = 0.3f;
 			}
 
-			if (ev.type == sf::Event::MouseWheelMoved)
+			if (const auto* mouseWheelScrolled = ev->getIf<sf::Event::MouseWheelScrolled>())
 			{
-				if (ev.mouseWheel.delta >= 1.f) {
+				if (mouseWheelScrolled->delta >= -1.f) {
 					view.zoom(1.05f);
-				} else if (ev.mouseWheel.delta <= -1.f) {
+				} else if (mouseWheelScrolled->delta <= -1.f) {
 					view.zoom(.95f);
 				}
 			}
@@ -319,7 +309,6 @@ int main(){
 				[](const std::unique_ptr<AIEntity>& o) { return o->hp == 0 || o == nullptr; }),
 			entities.end());
 
-		window.draw(text);
 		window.display();
 	}
 	return 0;

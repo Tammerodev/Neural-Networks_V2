@@ -1,0 +1,21 @@
+# ninja log v6
+2055	2067	1758558748215829549	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	38b2a75d264077f6
+2043	2055	1758558748203829456	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	b3c313cfa8830818
+2031	2043	1758558748192829370	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	b50ce4b18e9cdf72
+2079	2091	1758558748239829736	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	138b4cb13819b935
+2043	2055	1758558748203829456	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	b3c313cfa8830818
+2103	2120	1758558748269829970	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	157494920bfb87f0
+2055	2067	1758558748215829549	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	38b2a75d264077f6
+2103	2120	1758558748269829970	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	157494920bfb87f0
+0	27	1758558746175883606	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	92deb8b5c24006b7
+27	2031	1758558748180829277	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	ce02af526b500062
+2079	2091	1758558748239829736	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	138b4cb13819b935
+2103	2120	1758558748269829970	CMakeFiles/sfml-populate-complete	157494920bfb87f0
+2091	2103	1758558748251829830	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	ee4aaddf3285b2c
+27	2031	1758558748180829277	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	ce02af526b500062
+2067	2079	1758558748227829643	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	d522156b323164db
+2067	2079	1758558748227829643	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	d522156b323164db
+2103	2120	1758558748269829970	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	157494920bfb87f0
+2091	2103	1758558748251829830	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	ee4aaddf3285b2c
+2031	2043	1758558748192829370	/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	b50ce4b18e9cdf72
+0	27	1758558746175883606	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	92deb8b5c24006b7
