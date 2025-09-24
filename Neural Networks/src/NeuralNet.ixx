@@ -157,6 +157,10 @@ struct NeuralNet
 
 		return 0.f;
 	}
+
+	uint64_t getConnectionsCount() {
+		return cons.size();
+	}
 	
 
 private:
