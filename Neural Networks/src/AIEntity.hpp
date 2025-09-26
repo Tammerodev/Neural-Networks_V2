@@ -21,11 +21,14 @@ struct AIEntity {
 
 		sprite.setOrigin(sf::Vector2f(16,16));
 
+		resetEntity();
+	}
+
+	void resetEntity() {
+		hp = 10;
+		reachedGoal = false;
 		sprite.setPosition(spawn_point);
 
-		hp = 10;
-
-		reachedGoal = false;
 	}
 
 	void createRand() {

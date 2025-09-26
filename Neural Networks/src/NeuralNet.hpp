@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "Neuron.hpp"
+#include "Math.hpp"
 
 struct NeuralNet
 {
@@ -56,14 +57,6 @@ struct NeuralNet
 		neurons.insert({ Hidden2, std::vector<Neuron>(neurons_hidden2 + margin)});
 		// Output layer
 		neurons.insert({ Output, std::vector<Neuron>(neurons_output + margin)});
-	}
-
-	float randFloat() {
-		return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-	}
-
-	int randomInt(int x) {
-		return std::rand() % (x);
 	}
 
 	void initBased(const NeuralNet cpy, int randomness) {  // pass by const ref to avoid copies

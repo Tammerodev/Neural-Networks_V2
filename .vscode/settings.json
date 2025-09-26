@@ -67,7 +67,9 @@
         "fstream": "cpp",
         "iomanip": "cpp",
         "mutex": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp"
     },
     "cmake.sourceDirectory": "/home/lauri/Documents/Neural-Networks-master/Neural Networks"
 }
