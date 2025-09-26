@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <algorithm>
 
-#include "NeuralNet.ixx"
+#include "NeuralNet.hpp"
 
 sf::Texture texture;
 sf::Texture texture_damaged;

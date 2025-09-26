@@ -12,7 +12,7 @@
 #include <iostream>
 #include <math.h>
 
-#include "AIEntity.ixx"
+#include "AIEntity.hpp"
 
 sf::Texture walls_texture;
 
@@ -165,11 +165,11 @@ null_catch_init_entities:
 
 void updateEntities() {
 	for(auto& e : entities) {
-				e->network.setInput(2, e->sprite.getPosition().x / 100.f);
-				e->network.setInput(3, e->sprite.getPosition().y / 100.f);
+			e->network.setInput(2, e->sprite.getPosition().x / 100.f);
+			e->network.setInput(3, e->sprite.getPosition().y / 100.f);
 
-				e->network.setInput(4, (float)current_frame / (float)frames_per_generation);
-			}
+			e->network.setInput(4, (float)current_frame / (float)frames_per_generation);
+		}
 
 	for (auto& wall : walls) {
 		window.draw(wall);
@@ -184,8 +184,8 @@ void updateEntities() {
 				float dx = wall.getPosition().x - e->sprite.getPosition().x;
 				float dy = wall.getPosition().y - e->sprite.getPosition().y;
 
-				e->network.setInput(0, dx / 20.f);
-				e->network.setInput(1, dy / 20.f);
+				e->network.setInput(0, dx / 2.f);
+				e->network.setInput(1, dy / 2.f);
 			}	
 
 			if(dist < 10.f && e->hp != INVINCIBLE_HEALTH_VALUE) {
@@ -205,41 +205,6 @@ int main(){
 	walls_texture.loadFromFile("img/wall.png");
 
 	sf::Image map;
-
-	{
-		using std::cout;
-		int seed = 0;
-
-		system("CLS");
-
-
-		cout << "***************************************************\n";
-		cout << "				HL Research team\n";
-		cout << "Code by Lauri Etelamaki\n";
-		cout << "W,A,S,D to move neural networks\n";
-		cout << "SPACE to activate all input neurons\n";
-		cout << "***************************************************\n";
-
-
-
-		/*std::wcout << "Sy�t� tason numero : ";
-		std::cin >> _map;
-		if (_map > 3) {
-			std::cout << "Maailma ei olemassa ; palautetaan arvo 0";
-			_map = 0;
-		}
-
-		if(_map == 2) {
-			spawn_point = {45*16, 40*16};
-			frames_per_generation = 25000;
-		}
-
-		std::wcout << "Kuinka monta teko�ly� joka generaatiolla luodaan? : ";
-		std::cin >> generation_entity_count;
-		std::wcout << "Sy�t� satunnaisgeneraattorin siemen : ";
-		std::cin >> seed;*/
-		srand(time(0));
-	}
 
 	map.loadFromFile(("img/"+std::to_string(_map)+".png"));
 	// Load map

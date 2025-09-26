@@ -3,7 +3,8 @@
 #include <map>
 #include <iostream>
 
-#include "Neuron.ixx"
+#include "Neuron.hpp"
+
 struct NeuralNet
 {
 	NeuralNet() {
