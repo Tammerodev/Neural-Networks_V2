@@ -16,15 +16,18 @@
 
 class AISimulation {
     public: 
-        int start() {
+        void init() {
             ImGui::SFML::Init(window);
+            window.setFramerateLimit(75);
 
             int _map = 0;
             walls_texture.loadFromFile("img/wall.png");
 
             sf::Image map;
-
             map.loadFromFile(("img/"+std::to_string(_map)+".png"));
+
+            loadtexture();
+
             // Load map
             for (int y = 0;y < map.getSize().y;y++) {
                 for (int x = 0;x < map.getSize().x;x++) {
@@ -46,63 +49,133 @@ class AISimulation {
                 }
             }
 
-            loadtexture();
-
             for (int i = 0;i < generation_entity_count;i++) {
                 entities.push_back(std::make_unique<AIEntity>());
                 entities[i]->createRand();
             }
+        }
 
-            window.setFramerateLimit(75);
-            // Game loop
-            while (window.isOpen()) {
-                checkGen();
-
-                window.clear();
-                window.setView(view);
-                while (const std::optional ev = window.pollEvent()) {
-                    if (ev->is<sf::Event::Closed>()) {
-                        window.close();
-                    }
-
-                    // Resizing window
-                    if (const auto* resized = ev->getIf<sf::Event::Resized>())
-                    {
-                        view.setSize(sf::Vector2f(resized->size));
-                    }
-
-                    // ImGui
-                    ImGui::SFML::ProcessEvent(window, *ev);
-
-                    timeScale = 1.0f;
-                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
-                        timeScale = 10.f;
-                    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
-                        timeScale = 0.3f;
-                    }
-
-                    if (const auto* mouseWheelScrolled = ev->getIf<sf::Event::MouseWheelScrolled>())
-                    {
-                        if (mouseWheelScrolled->delta >= 1.f) {
-                            view.zoom(1.05f);
-                        } else if (mouseWheelScrolled->delta <= -1.f) {
-                            view.zoom(.95f);
-                        }
-                    }
+        void handleInput() {
+            while (const std::optional ev = window.pollEvent()) {
+                if (ev->is<sf::Event::Closed>()) {
+                    window.close();
                 }
 
+                // Resizing window
+                if (const auto* resized = ev->getIf<sf::Event::Resized>())
+                {
+                    view.setSize(sf::Vector2f(resized->size));
+                }
+
+                // ImGui
+                ImGui::SFML::ProcessEvent(window, *ev);
+
+                timeScale = 1.0f;
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
+                    timeScale = 10.f;
+                } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
+                    timeScale = 0.3f;
+                }
+
+                if (const auto* mouseWheelScrolled = ev->getIf<sf::Event::MouseWheelScrolled>())
+                {
+                    if (mouseWheelScrolled->delta >= 1.f) {
+                        view.zoom(1.05f);
+                    } else if (mouseWheelScrolled->delta <= -1.f) {
+                        view.zoom(.95f);
+                    }
+                }
+            }
+        }
+
+        void updateGui() {
+            ImGui::SFML::Update(window, deltaClock.restart());
+
+            ImGuiWindowFlags window_flags = 0;
+            window_flags |= ImGuiWindowFlags_NoBackground;
+            window_flags |= ImGuiWindowFlags_NoTitleBar;
+            window_flags |= ImGuiWindowFlags_NoInputs;
+
+
+            // etc.
+            bool open_ptr = true;
+            ImGui::Begin("global", &open_ptr, window_flags);
+            ImGui::SetWindowSize(ImVec2(1000, 1000));
+
+            
+
+            ImGui::SetWindowFontScale(2.f);
+            ImGui::Text("Generation: %i", generation);
+            if(usedWayPoints.size())
+                ImGui::Text("Absolute best time: %i frames", absBestTime);
+
+            ImGui::End();
+
+            ImGui::Begin("Simulation");
+            ImGui::Text("Current frame %i / %i", current_frame, frames_per_generation);
+            ImGui::Text("Entities currently %i / %i", entities.size(), generation_entity_count);
+
+            ImGui::InputInt("Frames per generation: ", (int*)&frames_per_generation);
+            ImGui::InputInt("Entities per generation: ", (int*)&generation_entity_count);
+            ImGui::End();
+
+            if(currentlySelectedEntityIndex != -1 && !(currentlySelectedEntityIndex < 0 || currentlySelectedEntityIndex >= entities.size())) {
+                const auto& e = entities.at(currentlySelectedEntityIndex);
+
+                ImGui::Begin("Selected entity");
+
+                ImGui::SetWindowSize(ImVec2(600, 500));
+                ImGui::SetWindowPos(ImVec2(mousePixelPos + sf::Vector2i(32, 32)));
+                ImGui::Text("Entity #%i", currentlySelectedEntityIndex);
+
+                ImGui::SeparatorText("Neural network");
+                ImGui::Text("Total connections: %i", e->network.getConnectionsCount());
+
+                for(int output_neuron_i = 0; output_neuron_i < e->network.neurons_output; ++output_neuron_i) {
+                    const float progbar_neuron_x = e->network.getOutputFrom(output_neuron_i);
+
+                    float progress_saturated = (progbar_neuron_x + 2.5f) / 5.0f;
+
+                    progress_saturated = std::clamp(progress_saturated, 0.0f, 1.0f);
+
+                    char buf[32];
+                    snprintf(buf, sizeof(buf), "%.3f", progbar_neuron_x);
+
+                    ImGui::ProgressBar(progress_saturated, ImVec2(0.f, 0.f), buf);
+
+                    ImGui::SameLine(0.0f, ImGui::GetStyle().ItemInnerSpacing.x);
+                    ImGui::Text("neuron [output][%i]", output_neuron_i);
+                }
+
+                ImGui::Text("Composite velocity: %f, %f", e->network.getOutputAsVelocity().x, e->network.getOutputAsVelocity().y);
+
+                ImGui::End();
+            }
+
+            ImGui::SFML::Render(window);
+        }
+
+        void start() {
+            init();
+
+            // Game loop
+            while (window.isOpen()) {
+                window.clear();
+                window.setView(view);
+
+                purgeEntities();
+                handleInput();
                 updateEntities();
+                checkGen();
 
                 currentlySelectedEntityIndex = -1;
-
-                int entityIndex = 0;
 
                 mousePixelPos = sf::Mouse::getPosition(window);
                 // convert it to world coordinates
                 sf::Vector2f worldPos = window.mapPixelToCoords(mousePixelPos);
 
-                for (auto& e : entities) {
-                    ++entityIndex;
+                for (int entityIndex = 0; entityIndex < entities.size(); entityIndex++) {
+                    auto& e = entities.at(entityIndex);
 
                     if(e == nullptr) continue;
 
@@ -137,73 +210,30 @@ class AISimulation {
                     window.draw(uw);
                 }
 
-                ImGui::SFML::Update(window, deltaClock.restart());
+                updateGui();
 
-
-                ImGui::Begin("Simulation");
-                ImGui::Text("Current frame %i / %i", current_frame, frames_per_generation);
-                ImGui::Text("Entities currently %i / %i", entities.size(), generation_entity_count);
-
-                ImGui::InputInt("Frames per generation: ", (int*)&frames_per_generation);
-                ImGui::InputInt("Entities per generation: ", (int*)&generation_entity_count);
-                ImGui::End();
-
-                if(currentlySelectedEntityIndex != -1 && !(currentlySelectedEntityIndex < 0 || currentlySelectedEntityIndex >= entities.size())) {
-                    const auto& e = entities.at(currentlySelectedEntityIndex);
-
-                    ImGui::Begin("Selected entity");
-                    ImGui::SetWindowSize(ImVec2(600, 500));
-                    ImGui::SetWindowPos(ImVec2(mousePixelPos + sf::Vector2i(32, 32)));
-                    ImGui::Text("Entity #%i", currentlySelectedEntityIndex);
-
-                    ImGui::SeparatorText("Neural network");
-                    ImGui::Text("Total connections: %i", e->network.getConnectionsCount());
-
-                    for(int output_neuron_i = 0; output_neuron_i < e->network.neurons_output; ++output_neuron_i) {
-                        const float progbar_neuron_x = e->network.getOutputFrom(output_neuron_i);
-
-                        float progress_saturated = (progbar_neuron_x + 2.5f) / 5.0f;
-
-                        progress_saturated = std::clamp(progress_saturated, 0.0f, 1.0f);
-
-                        char buf[32];
-                        snprintf(buf, sizeof(buf), "%.3f", progbar_neuron_x);
-
-                        ImGui::ProgressBar(progress_saturated, ImVec2(0.f, 0.f), buf);
-
-                        ImGui::SameLine(0.0f, ImGui::GetStyle().ItemInnerSpacing.x);
-                        ImGui::Text("neuron [output][%i]", output_neuron_i);
-                    }
-
-                    ImGui::Text("Composite velocity: %f, %f", e->network.getOutputAsVelocity().x, e->network.getOutputAsVelocity().y);
-
-                    ImGui::End();
-                }
-
-                ImGui::SFML::Render(window);
                 window.display();
-
-                entities.erase(
-                    std::remove_if(entities.begin(), entities.end(),
-                        [](const std::unique_ptr<AIEntity>& o) { 
-                            return o->hp == 0 || o == nullptr;
-                        }),
-                    entities.end());
             }
-            return 0;
         }
 
+        void purgeEntities() {
+            entities.erase(
+                std::remove_if(entities.begin(), entities.end(),
+                    [](const std::unique_ptr<AIEntity>& o) { 
+                        return o->hp == 0 || o == nullptr;
+                    }),
+                entities.end());
+        }
+ 
         void entityReachGoal(auto &e, auto &w) {
-            if (e->reachedTime == sf::Time::Zero) {
-                e->reachedTime = e->timer.getElapsedTime();
+            if (e->frameTimer != 0) {
                 e->reachedGoal = true;
 
                 // now, lets protect them from death before gen end
                 // by giving an magic number amount of hp!
                 e->hp = INVINCIBLE_HEALTH_VALUE;
 
-                std::cout << "1+";
-                std::cout.flush();
+                SIM_LOG("1+");
 
                 // Add marker for used waypoint
                 sf::RectangleShape marker;
@@ -220,6 +250,51 @@ class AISimulation {
 
                 // Move it out of the view
                 e->sprite.setPosition(sf::Vector2f(-20000.f, -20000.f));
+            }
+        }
+        
+        void newGeneration(auto bestEntity) {
+            if(bestEntity == nullptr) {
+                std::cerr << "Nullptr best entity! \n";
+                bestEntity = entities.emplace_back(std::make_unique<AIEntity>()).get();
+
+                entities.clear();
+                for (int i = 0;i < generation_entity_count;i++) {
+                    entities.push_back(std::make_unique<AIEntity>());
+                    entities[i]->createRand();
+                }
+
+                SIM_LOG("\nNew generation, NO entity/entities reached goal. there are %i entities\n", entities.size());
+            } else {
+                // Remove everything but the best entity
+                entities.erase(
+                    std::remove_if(entities.begin(), entities.end(),
+                        [&](const std::unique_ptr<AIEntity>& o) { return o.get() != bestEntity; }),
+                    entities.end());
+
+                for (int i = 0;i < generation_entity_count;i++) {
+                    std::unique_ptr<AIEntity> ai = std::make_unique<AIEntity>();
+                    ai->createBased(bestEntity->network);
+                    ai->reachedGoal = false;
+                    entities.push_back(std::move(ai));
+                }
+                
+                float bestEntityReachedTime = bestEntity->frameTimer;
+
+                if (bestEntityReachedTime < absBestTime) {
+                    absBestTime = bestEntityReachedTime;
+                }
+
+                SIM_LOG("\nNew generation, entity/entities reached goal. there are %i entities\n", entities.size());
+            }
+
+            generation++;
+
+            // Reset fields of all entities
+            for(auto& e: entities) {
+                if(e) {
+                    e->resetEntity();
+                }
             }
         }
 
@@ -240,58 +315,19 @@ class AISimulation {
             if (current_frame >= frames_per_generation) {
                 current_frame = 0;
                 AIEntity* bestEntity = nullptr;
-                float best = 9999.f;
+
+                float best = FLT_MAX;
 
                 for (auto& e : entities) {
-                    const float val = e->reachedTime.asSeconds() * e->hp;
+                    const float val = e->frameTimer;
 
                     if (best > val && e->reachedGoal == true) {
                         best = val;
                         bestEntity = e.get();  // get raw pointer from unique_ptr
-
-                        std::cout << "bestt chose\n" << bestEntity->reachedGoal;
                     }
                 }
 
-                if(bestEntity == nullptr) {
-                    std::cerr << "Nullptr best entity! \n";
-                    bestEntity = entities.emplace_back(std::make_unique<AIEntity>()).get();
-
-                    entities.clear();
-                    for (int i = 0;i < generation_entity_count;i++) {
-                        entities.push_back(std::make_unique<AIEntity>());
-                        entities[i]->createRand();
-                    }
-
-                    std::cout << "\n\nNew generation, NO entity/entities reached goal. there are "<< entities.size() << " entities\n";
-                } else {
-                    entities.erase(
-                        std::remove_if(entities.begin(), entities.end(),
-                            [&](const std::unique_ptr<AIEntity>& o) { return o.get() != bestEntity; }),
-                        entities.end());
-
-                    for (int i = 0;i < generation_entity_count;i++) {
-                        std::unique_ptr<AIEntity> ai = std::make_unique<AIEntity>();
-                        ai->createBased(bestEntity->network);
-                        ai->reachedGoal = false;
-                        entities.push_back(std::move(ai));
-                    }
-
-                    if (bestEntity->reachedTime.asMilliseconds() < absBestTime) {
-                        absBestTime = bestEntity->reachedTime.asMilliseconds();
-                    }
-
-                    std::cout << "\n\nNew generation, entity/entities reached goal. there are "<< entities.size() << " entities\n";
-                }
-
-                generation++;
-
-                // Reset fields of all entities
-                for(auto& e: entities) {
-                    if(e) {
-                        e->resetEntity();
-                    }
-                }
+                newGeneration(bestEntity);
             }
         }
 
@@ -302,8 +338,8 @@ class AISimulation {
                 float dx = wall.getPosition().x - e->sprite.getPosition().x;
                 float dy = wall.getPosition().y - e->sprite.getPosition().y;
 
-                e->network.setInput(0, dx / 2.f);
-                e->network.setInput(1, dy / 2.f);
+                e->network.setInput(0, dx / 5.f);
+                e->network.setInput(1, dy / 5.f);
             }	
 
             if(dist < 10.f && e->hp != INVINCIBLE_HEALTH_VALUE) {
@@ -345,8 +381,8 @@ class AISimulation {
         std::vector<std::unique_ptr<AIEntity>> entities;
 
         unsigned long long generation = 0;
-        unsigned long long absBestTime = 999999;
-        unsigned int generation_entity_count = 100;
+        uint64_t absBestTime = UINT64_MAX;
+        unsigned int generation_entity_count = 400;
 
         bool renderEntities = true;
 
@@ -357,7 +393,7 @@ class AISimulation {
         sf::RenderWindow window = sf::RenderWindow(sf::VideoMode({800, 800}), "Neural networks");
         sf::View view;
 
-        int frames_per_generation = 1600;
+        int frames_per_generation = 800;
         int current_frame = 0;
 
         // -1 = No entity selected

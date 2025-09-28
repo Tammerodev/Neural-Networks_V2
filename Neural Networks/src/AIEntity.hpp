@@ -11,8 +11,11 @@ sf::Texture texture_damaged;
 sf::Vector2f spawn_point = {300,300};
 
 void loadtexture() {
-	texture.loadFromFile("img/Entity.png");
-	texture_damaged.loadFromFile("img/Entity_damaged.png");
+	if(!texture.loadFromFile("img/Entity.png") ||
+		!texture_damaged.loadFromFile("img/Entity_damaged.png")) {
+
+		std::cerr << "AIEntity.hpp loadtexture() was unable to load textures!";
+	}
 }
 
 struct AIEntity {
@@ -28,7 +31,8 @@ struct AIEntity {
 		hp = 10;
 		reachedGoal = false;
 		sprite.setPosition(spawn_point);
-
+		
+		frameTimer = 0;
 	}
 
 	void createRand() {
@@ -53,6 +57,8 @@ struct AIEntity {
 	}
 
 	void update(const double timeScale) {
+		frameTimer += !reachedGoal;
+
 		sprite.setTexture(texture);
 
 		try
@@ -71,7 +77,6 @@ struct AIEntity {
 
 		moveX = std::clamp(moveX, -maxSpeed, maxSpeed);
 		moveY = std::clamp(moveY, -maxSpeed, maxSpeed);
-
 
 		sprite.move(sf::Vector2f(moveX / timeScale, moveY / timeScale));
 
@@ -95,16 +100,16 @@ struct AIEntity {
 		prev_pos = sprite.getPosition();
 	}
 
-	sf::Time reachedTime = sf::Time::Zero;
+	int64_t frameTimer = 0;
+
 	int64_t hp = 10;
 	sf::RectangleShape viewArea;
 	sf::Sprite sprite = sf::Sprite(texture);
-	sf::Clock timer;
+
 	NeuralNet network;
 
 	sf::Vector2f prev_pos = {0.f, 0.f};
 
 	bool reachedGoal = false;
-
 	bool isDirectCopy = false;
 };

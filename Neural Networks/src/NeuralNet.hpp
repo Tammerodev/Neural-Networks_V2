@@ -5,6 +5,7 @@
 
 #include "Neuron.hpp"
 #include "Math.hpp"
+#include "global.hpp"
 
 struct NeuralNet
 {
@@ -123,7 +124,7 @@ struct NeuralNet
 			}
 		}
 		catch (std::exception& e) {
-			std::cout << e.what() << '\n';
+			SIM_ERROR(e.what());
 		}
 	}
 

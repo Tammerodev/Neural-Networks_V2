@@ -6,8 +6,11 @@ include(FetchContent)
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-# Compiler flags
+# Max optimizations
 set(CMAKE_C_FLAGS_RELEASE "-O3")
+# Show commpiler warnings
+set(CMAKE_C_FLAGS_RELEASE "-Wall")
+
 
 find_package(OpenGL REQUIRED)
 
@@ -30,10 +33,11 @@ FetchContent_Declare(
   # tags like 'vX.X' corresponding to releases
 )
 
+# make sfml and base imgui available
 FetchContent_MakeAvailable(sfml)
 FetchContent_MakeAvailable(imgui)
 
-# Tell imgui-sfml where ImGui is
+# set IMGUI_DIR
 set(IMGUI_DIR ${imgui_SOURCE_DIR})
 option(IMGUI_SFML_FIND_SFML "Use find_package to find SFML" ON)
 option(IMGUI_SFML_IMGUI_DEMO "Build imgui_demo.cpp" OFF)
