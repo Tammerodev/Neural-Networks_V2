@@ -1,0 +1,104 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/imgui-sfml-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 127,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 135,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib64",
+			"paths" : 
+			[
+				"_deps/imgui-sfml-build/libImGui-SFML.a"
+			],
+			"targetId" : "ImGui-SFML::@0d4f94df99120bc7405e",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"build/_deps/imgui-sfml-src/imgui-SFML.h",
+				"build/_deps/imgui-sfml-src/imgui-SFML_export.h",
+				"build/_deps/imgui-src/imconfig.h",
+				"build/_deps/imgui-src/imgui.h",
+				"build/_deps/imgui-src/imgui_internal.h",
+				"build/_deps/imgui-src/imstb_rectpack.h",
+				"build/_deps/imgui-src/imstb_textedit.h",
+				"build/_deps/imgui-src/imstb_truetype.h",
+				"build/_deps/imgui-src/misc/cpp/imgui_stdlib.h",
+				"build/_deps/imgui-sfml-src/imconfig-SFML.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/ImGui-SFML",
+			"exportName" : "ImGui-SFML",
+			"exportTargets" : 
+			[
+				{
+					"id" : "ImGui-SFML::@0d4f94df99120bc7405e",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/imgui-sfml-build/CMakeFiles/Export/3d81db8e277c760ab8b6bed07c34c449/ImGui-SFML.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/ImGui-SFML",
+			"paths" : 
+			[
+				"build/_deps/imgui-sfml-src/cmake/ImGui-SFMLConfig.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/imgui-sfml-build",
+		"source" : "build/_deps/imgui-sfml-src"
+	}
+}

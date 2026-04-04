@@ -1,4 +1,4 @@
-# Install script for directory: /home/lauri/Documents/Neural-Networks-master/Neural Networks
+# Install script for directory: /home/lauri/Documents/Neural-Networks-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

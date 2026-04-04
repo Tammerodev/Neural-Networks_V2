@@ -158,7 +158,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ImGui-SFML_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S"/home/lauri/Documents/Neural-Networks-master/Neural Networks" -B/home/lauri/Documents/Neural-Networks-master/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/lauri/Documents/Neural-Networks-master -B/home/lauri/Documents/Neural-Networks-master/build
   description = Re-running CMake...
   generator = 1
 

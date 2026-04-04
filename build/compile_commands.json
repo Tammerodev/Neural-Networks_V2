@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/lauri/Documents/Neural-Networks-master/build",
-  "command": "/usr/bin/g++ -DIMGUI_USER_CONFIG=\\\"imconfig-SFML.h\\\" -DSFML_STATIC -I\"/home/lauri/Documents/Neural-Networks-master/Neural Networks/include\" -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src -g -o CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o -c \"/home/lauri/Documents/Neural-Networks-master/Neural Networks/src/Source.cpp\"",
-  "file": "/home/lauri/Documents/Neural-Networks-master/Neural Networks/src/Source.cpp",
+  "command": "/usr/bin/g++ -DIMGUI_USER_CONFIG=\\\"imconfig-SFML.h\\\" -DSFML_STATIC -I/home/lauri/Documents/Neural-Networks-master/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src -g -o CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o -c /home/lauri/Documents/Neural-Networks-master/src/Source.cpp",
+  "file": "/home/lauri/Documents/Neural-Networks-master/src/Source.cpp",
   "output": "CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o"
 },
 {

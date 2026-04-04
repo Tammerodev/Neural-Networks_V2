@@ -3,9 +3,9 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SOURCES at CMakeLists.txt:6 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/lauri/Documents/Neural-Networks-master/Neural Networks/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/lauri/Documents/Neural-Networks-master/src/*.cpp")
 set(OLD_GLOB
-  "/home/lauri/Documents/Neural-Networks-master/Neural Networks/src/Source.cpp"
+  "/home/lauri/Documents/Neural-Networks-master/src/Source.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
