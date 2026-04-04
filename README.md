@@ -1,6 +1,5 @@
 # Neural Networks
 
-
 1. Install X11
     sudo dnf install \
     libX11-devel \
