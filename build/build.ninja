@@ -56,8 +56,6 @@ build CMakeFiles/NeuralNetworks.dir/src/Source.cpp.o: CXX_COMPILER__NeuralNetwor
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = CMakeFiles/NeuralNetworks.dir
   OBJECT_FILE_DIR = CMakeFiles/NeuralNetworks.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/NeuralNetworks.dir/
-  TARGET_PDB = NeuralNetworks.pdb
 
 
 # =============================================================================
@@ -75,9 +73,8 @@ build NeuralNetworks: CXX_EXECUTABLE_LINKER__NeuralNetworks_Debug CMakeFiles/Neu
   OBJECT_DIR = CMakeFiles/NeuralNetworks.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/NeuralNetworks.dir/
   TARGET_FILE = NeuralNetworks
-  TARGET_PDB = NeuralNetworks.pdb
+  TARGET_PDB = NeuralNetworks.dbg
 
 
 #############################################
@@ -308,8 +305,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Err.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -318,8 +313,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o: CXX
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Sleep.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -328,8 +321,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/String.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -338,8 +329,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Utils.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -348,8 +337,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Vector2.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Vector2.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -358,8 +345,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Vector2.cpp.o:
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Vector3.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Vector3.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -368,8 +353,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Vector3.cpp.o:
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -378,8 +361,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStrea
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -388,8 +369,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStr
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o: CXX_COMPILER__sfml-system_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp || cmake_object_order_depends_target_sfml-system
   DEFINES = -DSFML_STATIC
@@ -398,8 +377,6 @@ build _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
 
 
 # =============================================================================
@@ -414,9 +391,8 @@ build _deps/sfml-build/lib/libsfml-system-s-d.a: CXX_STATIC_LIBRARY_LINKER__sfml
   OBJECT_DIR = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.pdb
   TARGET_FILE = _deps/sfml-build/lib/libsfml-system-s-d.a
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-system-s-d.pdb
+  TARGET_PDB = sfml-system-s-d.a.dbg
 
 
 #############################################
@@ -505,8 +481,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Clipboard.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Context.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -515,8 +489,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.o:
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Cursor.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Cursor.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -525,8 +497,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Cursor.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/GlContext.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -535,8 +505,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlResource.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/GlResource.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -545,8 +513,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlResource.cpp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Joystick.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Joystick.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -555,8 +521,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Joystick.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManager.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/JoystickManager.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -565,8 +529,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManage
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Keyboard.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -575,8 +537,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Mouse.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -585,8 +545,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Touch.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Touch.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -595,8 +553,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Touch.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Sensor.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Sensor.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -605,8 +561,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Sensor.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/SensorManager.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/SensorManager.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -615,8 +569,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/SensorManager.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/VideoMode.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/VideoMode.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -625,8 +577,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/VideoMode.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Vulkan.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -635,8 +585,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Window.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Window.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -645,8 +593,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Window.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowBase.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/WindowBase.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -655,8 +601,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowBase.cpp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/WindowImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -665,8 +609,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowImpl.cpp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/CursorImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/CursorImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -675,8 +617,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/CursorImp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/ClipboardImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/ClipboardImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -685,8 +625,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/Clipboard
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/InputImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/InputImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -695,8 +633,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/InputImpl
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeyboardImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/KeyboardImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -705,8 +641,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeyboardI
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeySymToKeyMapping.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/KeySymToKeyMapping.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -715,8 +649,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeySymToK
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeySymToUnicodeMapping.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/KeySymToUnicodeMapping.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -725,8 +657,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/KeySymToU
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/SensorImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/SensorImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -735,8 +665,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/SensorImp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/Display.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/Display.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -745,8 +673,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/Display.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/VideoModeImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/VideoModeImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -755,8 +681,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/VideoMode
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/VulkanImplX11.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/VulkanImplX11.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -765,8 +689,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/VulkanImp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/WindowImplX11.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -775,8 +697,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/GlxContext.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/GlxContext.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -785,8 +705,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/GlxContex
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/JoystickImpl.cpp.o: CXX_COMPILER__sfml-window_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Window/Unix/JoystickImpl.cpp || cmake_object_order_depends_target_sfml-window
   DEFINES = -DSFML_STATIC
@@ -795,8 +713,6 @@ build _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/JoystickI
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/vulkan
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
 
 
 # =============================================================================
@@ -811,9 +727,8 @@ build _deps/sfml-build/lib/libsfml-window-s-d.a: CXX_STATIC_LIBRARY_LINKER__sfml
   OBJECT_DIR = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.pdb
   TARGET_FILE = _deps/sfml-build/lib/libsfml-window-s-d.a
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-window-s-d.pdb
+  TARGET_PDB = sfml-window-s-d.a.dbg
 
 
 #############################################
@@ -902,8 +817,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o: C
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/Http.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -912,8 +825,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -922,8 +833,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/Packet.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -932,8 +841,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/Socket.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -942,8 +849,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -952,8 +857,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelect
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -962,8 +865,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -972,8 +873,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -982,8 +881,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o: CXX_COMPILER__sfml-network_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp || cmake_object_order_depends_target_sfml-network
   DEFINES = -DSFML_STATIC
@@ -992,8 +889,6 @@ build _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketI
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
 
 
 # =============================================================================
@@ -1008,9 +903,8 @@ build _deps/sfml-build/lib/libsfml-network-s-d.a: CXX_STATIC_LIBRARY_LINKER__sfm
   OBJECT_DIR = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/sfml-network.pdb
   TARGET_FILE = _deps/sfml-build/lib/libsfml-network-s-d.a
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-network-s-d.pdb
+  TARGET_PDB = sfml-network-s-d.a.dbg
 
 
 #############################################
@@ -1099,8 +993,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Font.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1109,8 +1001,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Glsl.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1119,8 +1009,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1129,8 +1017,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1139,8 +1025,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensio
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Image.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1149,8 +1033,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderStates.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1159,8 +1041,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStat
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderTexture.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1169,8 +1049,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderText
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderTarget.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1179,8 +1057,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarg
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderWindow.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1189,8 +1065,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWind
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Shader.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1199,8 +1073,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMode.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/StencilMode.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1209,8 +1081,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMod
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Texture.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1219,8 +1089,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1229,8 +1097,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSav
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Transform.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1239,8 +1105,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Transformable.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1249,8 +1113,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transforma
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/View.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1259,8 +1121,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Shape.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1269,8 +1129,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/CircleShape.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1279,8 +1137,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShap
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RectangleShape.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1289,8 +1145,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleS
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/ConvexShape.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1299,8 +1153,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShap
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Sprite.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1309,8 +1161,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/Text.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1319,8 +1169,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/VertexArray.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1329,8 +1177,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArra
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/VertexBuffer.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1339,8 +1185,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuff
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImplFBO.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1349,8 +1193,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderText
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o: CXX_COMPILER__sfml-graphics_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.cpp || cmake_object_order_depends_target_sfml-graphics
   DEFINES = -DSFML_STATIC -DSTBI_FAILURE_USERMSG
@@ -1359,8 +1201,6 @@ build _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderText
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/stb_image -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /usr/include/freetype2
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
 
 
 # =============================================================================
@@ -1375,9 +1215,8 @@ build _deps/sfml-build/lib/libsfml-graphics-s-d.a: CXX_STATIC_LIBRARY_LINKER__sf
   OBJECT_DIR = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.pdb
   TARGET_FILE = _deps/sfml-build/lib/libsfml-graphics-s-d.a
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-graphics-s-d.pdb
+  TARGET_PDB = sfml-graphics-s-d.a.dbg
 
 
 #############################################
@@ -1466,8 +1305,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioResource.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/AudioDevice.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1476,8 +1313,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/Listener.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1486,8 +1321,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.o: 
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Miniaudio.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/Miniaudio.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1496,8 +1329,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Miniaudio.cpp.o:
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/MiniaudioUtils.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/MiniaudioUtils.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1506,8 +1337,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/MiniaudioUtils.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/Music.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1516,8 +1345,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.o: CXX
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/PlaybackDevice.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/PlaybackDevice.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1526,8 +1353,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/PlaybackDevice.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/Sound.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1536,8 +1361,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.o: CXX
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundBuffer.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1546,8 +1369,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundBufferRecorder.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1556,8 +1377,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecor
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/InputSoundFile.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1566,8 +1385,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/OutputSoundFile.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1576,8 +1393,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundRecorder.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1586,8 +1401,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cp
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundSource.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1596,8 +1409,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundStream.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1606,8 +1417,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileFactory.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1616,8 +1425,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileReaderFlac.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1626,8 +1433,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderF
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderMp3.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileReaderMp3.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1636,8 +1441,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderM
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileReaderOgg.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1646,8 +1449,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderO
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileReaderWav.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1656,8 +1457,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderW
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileWriterFlac.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1666,8 +1465,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterF
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileWriterOgg.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1676,8 +1473,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterO
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.o: CXX_COMPILER__sfml-audio_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src/SFML/Audio/SoundFileWriterWav.cpp || cmake_object_order_depends_target_sfml-audio
   DEFINES = -DFLAC__NO_DLL -DMA_NO_ENCODING -DMA_NO_FLAC -DMA_NO_GENERATION -DMA_NO_MP3 -DMA_NO_RESOURCE_MANAGER -DMA_USE_STDINT -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_IS_BIG_ENDIAN=0 -DSFML_STATIC
@@ -1686,8 +1481,6 @@ build _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterW
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/src -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/miniaudio -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/extlibs/headers/minimp3
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   OBJECT_FILE_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
 
 
 # =============================================================================
@@ -1702,9 +1495,8 @@ build _deps/sfml-build/lib/libsfml-audio-s-d.a: CXX_STATIC_LIBRARY_LINKER__sfml-
   OBJECT_DIR = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.pdb
   TARGET_FILE = _deps/sfml-build/lib/libsfml-audio-s-d.a
-  TARGET_PDB = _deps/sfml-build/lib/libsfml-audio-s-d.pdb
+  TARGET_PDB = sfml-audio-s-d.a.dbg
 
 
 #############################################
@@ -1793,8 +1585,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/imgui-SFML.cpp.o: CXX_COM
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/imgui.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1803,8 +1593,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui.cpp.o:
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_demo.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/imgui_demo.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1813,8 +1601,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_demo.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_draw.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/imgui_draw.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1823,8 +1609,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_draw.c
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_tables.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/imgui_tables.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1833,8 +1617,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_tables
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_widgets.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/imgui_widgets.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1843,8 +1625,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_widget
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/misc/cpp/imgui_stdlib.cpp.o: CXX_COMPILER__ImGui-SFML_unscanned_Debug /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp || cmake_object_order_depends_target_ImGui-SFML
   DEFINES = -DIMGUI_USER_CONFIG=\"imconfig-SFML.h\" -DSFML_STATIC
@@ -1853,8 +1633,6 @@ build _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/misc/cpp/img
   INCLUDES = -I/home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-sfml-src -I/home/lauri/Documents/Neural-Networks-master/build/_deps/sfml-src/include -isystem /home/lauri/Documents/Neural-Networks-master/build/_deps/imgui-src
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   OBJECT_FILE_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/misc/cpp
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
 
 
 # =============================================================================
@@ -1869,9 +1647,8 @@ build _deps/imgui-sfml-build/libImGui-SFML.a: CXX_STATIC_LIBRARY_LINKER__ImGui-S
   OBJECT_DIR = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/ImGui-SFML.pdb
   TARGET_FILE = _deps/imgui-sfml-build/libImGui-SFML.a
-  TARGET_PDB = _deps/imgui-sfml-build/libImGui-SFML.pdb
+  TARGET_PDB = ImGui-SFML.a.dbg
 
 
 #############################################
@@ -2053,14 +1830,14 @@ build /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/cmake.verify
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/cmake.verify_globs | /home/lauri/Documents/Neural-Networks-master/CMakeLists.txt /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/VerifyGlobs.cmake /usr/local/lib64/cmake/SFML/FindFreetype.cmake /usr/local/lib64/cmake/SFML/FindHarfBuzz.cmake /usr/local/lib64/cmake/SFML/FindUDev.cmake /usr/local/lib64/cmake/SFML/SFMLConfig.cmake /usr/local/lib64/cmake/SFML/SFMLConfigVersion.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLSystemDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLSystemStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLWindowDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLWindowStaticTargets.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake _deps/imgui-sfml-src/CMakeLists.txt _deps/imgui-sfml-src/cmake/FindImGui.cmake _deps/sfml-src/CMakeLists.txt _deps/sfml-src/cmake/CompilerWarnings.cmake _deps/sfml-src/cmake/Config.cmake _deps/sfml-src/cmake/Macros.cmake _deps/sfml-src/cmake/Modules/FindFLAC.cmake _deps/sfml-src/cmake/Modules/FindFreetype.cmake _deps/sfml-src/cmake/Modules/FindUDev.cmake _deps/sfml-src/cmake/Modules/FindVorbis.cmake _deps/sfml-src/cmake/SFMLConfig.cmake.in _deps/sfml-src/src/SFML/Audio/CMakeLists.txt _deps/sfml-src/src/SFML/Audio/Dependencies.cmake.in _deps/sfml-src/src/SFML/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/Dependencies.cmake.in _deps/sfml-src/src/SFML/Network/CMakeLists.txt _deps/sfml-src/src/SFML/System/CMakeLists.txt _deps/sfml-src/src/SFML/System/Dependencies.cmake.in _deps/sfml-src/src/SFML/Window/CMakeLists.txt _deps/sfml-src/src/SFML/Window/Dependencies.cmake.in _deps/sfml-src/tools/pkg-config/sfml-all.pc.in _deps/sfml-src/tools/pkg-config/sfml-audio.pc.in _deps/sfml-src/tools/pkg-config/sfml-graphics.pc.in _deps/sfml-src/tools/pkg-config/sfml-network.pc.in _deps/sfml-src/tools/pkg-config/sfml-system.pc.in _deps/sfml-src/tools/pkg-config/sfml-window.pc.in
+build build.ninja: RERUN_CMAKE /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/cmake.verify_globs | /home/lauri/Documents/Neural-Networks-master/CMakeLists.txt /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/VerifyGlobs.cmake /usr/local/lib64/cmake/SFML/FindFreetype.cmake /usr/local/lib64/cmake/SFML/FindHarfBuzz.cmake /usr/local/lib64/cmake/SFML/FindUDev.cmake /usr/local/lib64/cmake/SFML/SFMLConfig.cmake /usr/local/lib64/cmake/SFML/SFMLConfigVersion.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLSystemDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLSystemStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLWindowDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLWindowStaticTargets.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake _deps/imgui-sfml-src/CMakeLists.txt _deps/imgui-sfml-src/cmake/FindImGui.cmake _deps/sfml-src/CMakeLists.txt _deps/sfml-src/cmake/CompilerWarnings.cmake _deps/sfml-src/cmake/Config.cmake _deps/sfml-src/cmake/Macros.cmake _deps/sfml-src/cmake/Modules/FindFLAC.cmake _deps/sfml-src/cmake/Modules/FindFreetype.cmake _deps/sfml-src/cmake/Modules/FindUDev.cmake _deps/sfml-src/cmake/Modules/FindVorbis.cmake _deps/sfml-src/cmake/SFMLConfig.cmake.in _deps/sfml-src/src/SFML/Audio/CMakeLists.txt _deps/sfml-src/src/SFML/Audio/Dependencies.cmake.in _deps/sfml-src/src/SFML/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/Dependencies.cmake.in _deps/sfml-src/src/SFML/Network/CMakeLists.txt _deps/sfml-src/src/SFML/System/CMakeLists.txt _deps/sfml-src/src/SFML/System/Dependencies.cmake.in _deps/sfml-src/src/SFML/Window/CMakeLists.txt _deps/sfml-src/src/SFML/Window/Dependencies.cmake.in _deps/sfml-src/tools/pkg-config/sfml-all.pc.in _deps/sfml-src/tools/pkg-config/sfml-audio.pc.in _deps/sfml-src/tools/pkg-config/sfml-graphics.pc.in _deps/sfml-src/tools/pkg-config/sfml-network.pc.in _deps/sfml-src/tools/pkg-config/sfml-system.pc.in _deps/sfml-src/tools/pkg-config/sfml-window.pc.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/lauri/Documents/Neural-Networks-master/CMakeLists.txt /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/VerifyGlobs.cmake /usr/local/lib64/cmake/SFML/FindFreetype.cmake /usr/local/lib64/cmake/SFML/FindHarfBuzz.cmake /usr/local/lib64/cmake/SFML/FindUDev.cmake /usr/local/lib64/cmake/SFML/SFMLConfig.cmake /usr/local/lib64/cmake/SFML/SFMLConfigVersion.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLSystemDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLSystemStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLWindowDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLWindowStaticTargets.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake _deps/imgui-sfml-src/CMakeLists.txt _deps/imgui-sfml-src/cmake/FindImGui.cmake _deps/sfml-src/CMakeLists.txt _deps/sfml-src/cmake/CompilerWarnings.cmake _deps/sfml-src/cmake/Config.cmake _deps/sfml-src/cmake/Macros.cmake _deps/sfml-src/cmake/Modules/FindFLAC.cmake _deps/sfml-src/cmake/Modules/FindFreetype.cmake _deps/sfml-src/cmake/Modules/FindUDev.cmake _deps/sfml-src/cmake/Modules/FindVorbis.cmake _deps/sfml-src/cmake/SFMLConfig.cmake.in _deps/sfml-src/src/SFML/Audio/CMakeLists.txt _deps/sfml-src/src/SFML/Audio/Dependencies.cmake.in _deps/sfml-src/src/SFML/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/Dependencies.cmake.in _deps/sfml-src/src/SFML/Network/CMakeLists.txt _deps/sfml-src/src/SFML/System/CMakeLists.txt _deps/sfml-src/src/SFML/System/Dependencies.cmake.in _deps/sfml-src/src/SFML/Window/CMakeLists.txt _deps/sfml-src/src/SFML/Window/Dependencies.cmake.in _deps/sfml-src/tools/pkg-config/sfml-all.pc.in _deps/sfml-src/tools/pkg-config/sfml-audio.pc.in _deps/sfml-src/tools/pkg-config/sfml-graphics.pc.in _deps/sfml-src/tools/pkg-config/sfml-network.pc.in _deps/sfml-src/tools/pkg-config/sfml-system.pc.in _deps/sfml-src/tools/pkg-config/sfml-window.pc.in: phony
+build /home/lauri/Documents/Neural-Networks-master/CMakeLists.txt /home/lauri/Documents/Neural-Networks-master/build/CMakeFiles/VerifyGlobs.cmake /usr/local/lib64/cmake/SFML/FindFreetype.cmake /usr/local/lib64/cmake/SFML/FindHarfBuzz.cmake /usr/local/lib64/cmake/SFML/FindUDev.cmake /usr/local/lib64/cmake/SFML/SFMLConfig.cmake /usr/local/lib64/cmake/SFML/SFMLConfigVersion.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLGraphicsStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLSystemDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLSystemStaticTargets.cmake /usr/local/lib64/cmake/SFML/SFMLWindowDependencies.cmake /usr/local/lib64/cmake/SFML/SFMLWindowStaticTargets.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake/Modules/FindGit.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake _deps/imgui-sfml-src/CMakeLists.txt _deps/imgui-sfml-src/cmake/FindImGui.cmake _deps/sfml-src/CMakeLists.txt _deps/sfml-src/cmake/CompilerWarnings.cmake _deps/sfml-src/cmake/Config.cmake _deps/sfml-src/cmake/Macros.cmake _deps/sfml-src/cmake/Modules/FindFLAC.cmake _deps/sfml-src/cmake/Modules/FindFreetype.cmake _deps/sfml-src/cmake/Modules/FindUDev.cmake _deps/sfml-src/cmake/Modules/FindVorbis.cmake _deps/sfml-src/cmake/SFMLConfig.cmake.in _deps/sfml-src/src/SFML/Audio/CMakeLists.txt _deps/sfml-src/src/SFML/Audio/Dependencies.cmake.in _deps/sfml-src/src/SFML/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/CMakeLists.txt _deps/sfml-src/src/SFML/Graphics/Dependencies.cmake.in _deps/sfml-src/src/SFML/Network/CMakeLists.txt _deps/sfml-src/src/SFML/System/CMakeLists.txt _deps/sfml-src/src/SFML/System/Dependencies.cmake.in _deps/sfml-src/src/SFML/Window/CMakeLists.txt _deps/sfml-src/src/SFML/Window/Dependencies.cmake.in _deps/sfml-src/tools/pkg-config/sfml-all.pc.in _deps/sfml-src/tools/pkg-config/sfml-audio.pc.in _deps/sfml-src/tools/pkg-config/sfml-graphics.pc.in _deps/sfml-src/tools/pkg-config/sfml-network.pc.in _deps/sfml-src/tools/pkg-config/sfml-system.pc.in _deps/sfml-src/tools/pkg-config/sfml-window.pc.in: phony
 
 
 #############################################
