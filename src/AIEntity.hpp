@@ -61,14 +61,7 @@ struct AIEntity {
 
 		sprite.setTexture(texture);
 
-		try
-		{
-			network.update();
-		}
-		catch (const std::exception&e)
-		{
-			printf("%c\n",e.what());
-		}
+		network.update();
 
 		const float maxSpeed = 5.f;
 

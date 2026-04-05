@@ -5,5 +5,6 @@
 
 int main() {
 	AISimulation sim;
+	sim.init();
 	sim.start();
 }

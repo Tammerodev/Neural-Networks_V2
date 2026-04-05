@@ -13,7 +13,6 @@ struct NeuralNet
 		init();
 	}
 
-
 	void randomConnection() {
 		cons.push_back(Connection(randFloat() - 0.5f,
 				NeuronIndex(Input, rand() % neurons_input),
@@ -48,16 +47,14 @@ struct NeuralNet
 	const int neurons_hidden2 = 12;
 	const int neurons_output = 5;
 
-	const int margin = 10;
-
 	void init() {
 		// Input
-		neurons.insert({ Input, std::vector<Neuron>(neurons_input + margin)});
+		neurons.insert({ Input, std::vector<Neuron>(neurons_input)});
 		// Hidden layer
-		neurons.insert({ Hidden, std::vector<Neuron>(neurons_hidden + margin)});
-		neurons.insert({ Hidden2, std::vector<Neuron>(neurons_hidden2 + margin)});
+		neurons.insert({ Hidden, std::vector<Neuron>(neurons_hidden)});
+		neurons.insert({ Hidden2, std::vector<Neuron>(neurons_hidden2)});
 		// Output layer
-		neurons.insert({ Output, std::vector<Neuron>(neurons_output + margin)});
+		neurons.insert({ Output, std::vector<Neuron>(neurons_output)});
 	}
 
 	void initBased(const NeuralNet cpy, int randomness) {  // pass by const ref to avoid copies
@@ -90,41 +87,36 @@ struct NeuralNet
 	}
 
 	void update() {
-    	try {
-			// Make sure Output and Hidden layers exist
-			if (neurons.size() > 0) {
-				for (auto& n : neurons.at(Output)) {
-					n.value = 0.f;
-				}
-				for (auto& n : neurons.at(Hidden)) {
-					n.value = 0.f;
-				}
-				for (auto& n : neurons.at(Hidden2)) {
-					n.value = 0.f;
-				}
+		// Make sure Output and Hidden layers exist
+		if (neurons.size() > 0) {
+			for (auto& n : neurons.at(Output)) {
+				n.value = 0.f;
 			}
-
-
-			// Input => Hidden
-			for (auto& con : cons) {
-				if(con.connectedFromIndex.layer == Input)
-					neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
+			for (auto& n : neurons.at(Hidden)) {
+				n.value = 0.f;
 			}
-
-			// Hidden => Hidden2
-			for (auto& con : cons) {
-				if(con.connectedFromIndex.layer == Hidden)
-					neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
-			}
-
-			// Hidden2 => Output
-			for (auto& con : cons) {
-				if(con.connectedFromIndex.layer == Hidden2)
-					neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
+			for (auto& n : neurons.at(Hidden2)) {
+				n.value = 0.f;
 			}
 		}
-		catch (std::exception& e) {
-			SIM_ERROR(e.what());
+
+
+		// Input => Hidden
+		for (auto& con : cons) {
+			if(con.connectedFromIndex.layer == Input)
+				neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
+		}
+
+		// Hidden => Hidden2
+		for (auto& con : cons) {
+			if(con.connectedFromIndex.layer == Hidden)
+				neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
+		}
+
+		// Hidden2 => Output
+		for (auto& con : cons) {
+			if(con.connectedFromIndex.layer == Hidden2)
+				neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
 		}
 	}
 
@@ -136,7 +128,7 @@ struct NeuralNet
 	}
 
 	sf::Vector2f getOutputAsVelocity() {
-		return sf::Vector2f(getOutputFrom(2) - getOutputFrom(0), getOutputFrom(3) - getOutputFrom(1));
+		return sf::Vector2f(getOutputFrom(0), getOutputFrom(1));
 	}
 
 	float getOutputFrom(int index) {

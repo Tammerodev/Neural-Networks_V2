@@ -96,13 +96,9 @@ class AISimulation {
             window_flags |= ImGuiWindowFlags_NoTitleBar;
             window_flags |= ImGuiWindowFlags_NoInputs;
 
-
-            // etc.
             bool open_ptr = true;
             ImGui::Begin("global", &open_ptr, window_flags);
             ImGui::SetWindowSize(ImVec2(1000, 1000));
-
-            
 
             ImGui::SetWindowFontScale(2.f);
             ImGui::Text("Generation: %i", generation);
@@ -119,6 +115,7 @@ class AISimulation {
             ImGui::InputInt("Entities per generation: ", (int*)&generation_entity_count);
             ImGui::End();
 
+            // Display info about an entity when hovering over it
             if(currentlySelectedEntityIndex != -1 && !(currentlySelectedEntityIndex < 0 || currentlySelectedEntityIndex >= entities.size())) {
                 const auto& e = entities.at(currentlySelectedEntityIndex);
 
@@ -156,14 +153,13 @@ class AISimulation {
         }
 
         void start() {
-            init();
-
-            // Game loop
             while (window.isOpen()) {
                 window.clear();
                 window.setView(view);
 
                 purgeEntities();
+                purgeInactiveEntities();
+
                 handleInput();
                 updateEntities();
                 checkGen();
@@ -179,6 +175,7 @@ class AISimulation {
 
                     if(e == nullptr) continue;
 
+                    // Check if hovering mouse over an entity
                     if(currentlySelectedEntityIndex == -1 && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
                         if(e->sprite.getGlobalBounds().findIntersection(sf::FloatRect(sf::Vector2f(worldPos.x - 5.f, worldPos.y - 5.f), sf::Vector2f(20.f, 20.f)))) {
                             sf::RectangleShape indicator;
@@ -221,6 +218,17 @@ class AISimulation {
                 std::remove_if(entities.begin(), entities.end(),
                     [](const std::unique_ptr<AIEntity>& o) { 
                         return o->hp == 0 || o == nullptr;
+                    }),
+                entities.end());
+        }
+
+        void purgeInactiveEntities() {
+            if(current_frame < 100) return;
+
+            entities.erase(
+                std::remove_if(entities.begin(), entities.end(),
+                    [](const std::unique_ptr<AIEntity>& o) { 
+                        return distance(o->prev_pos.x, o->prev_pos.y, spawn_point.x, spawn_point.y) < 50;
                     }),
                 entities.end());
         }
@@ -367,7 +375,6 @@ class AISimulation {
         }
 
         sf::Clock deltaClock;                                                                                                 
-
 
     private:
         sf::Texture walls_texture;

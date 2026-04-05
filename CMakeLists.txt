@@ -7,7 +7,7 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Max optimizations
-set(CMAKE_C_FLAGS_RELEASE "-O3")
+set(CMAKE_C_FLAGS_RELEASE "-O4")
 # Show commpiler warnings
 set(CMAKE_C_FLAGS_RELEASE "-Wall")
 
