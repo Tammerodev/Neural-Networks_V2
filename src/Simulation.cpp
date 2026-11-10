@@ -105,6 +105,7 @@ void AISimulation::updateGui()
     // Display info about an entity when hovering over it
     if(currentlySelectedEntityIndex != -1 && !(currentlySelectedEntityIndex < 0 || currentlySelectedEntityIndex >= entities.size())) {
         const auto& e = entities.at(currentlySelectedEntityIndex);
+        auto esize_params = e->getSize();
 
         ImGui::Begin("Selected entity");
 
@@ -113,10 +114,11 @@ void AISimulation::updateGui()
         ImGui::Text("Entity #%i", currentlySelectedEntityIndex);
 
         ImGui::SeparatorText("Neural network");
-        ImGui::Text("Total connections: %i", e->network.getConnectionsCount());
+        ImGui::Text("Total connections: %i", esize_params.at("con"));
 
-        for(int output_neuron_i = 0; output_neuron_i < e->network.neurons_output; ++output_neuron_i) {
-            const float progbar_neuron_x = e->network.getOutputFrom(output_neuron_i);
+        for(int output_neuron_i = 0; output_neuron_i < esize_params.at("output"); output_neuron_i++) {
+
+            float progbar_neuron_x = e->getNeuralNetwork()->getOutputFrom(output_neuron_i);
 
             float progress_saturated = (progbar_neuron_x + 2.5f) / 5.0f;
 
@@ -131,7 +133,7 @@ void AISimulation::updateGui()
             ImGui::Text("neuron [output][%i]", output_neuron_i);
         }
 
-        ImGui::Text("Composite velocity: %f, %f", e->network.getOutputAsVelocity().x, e->network.getOutputAsVelocity().y);
+        ImGui::Text("Composite velocity: %f, %f", e->getNeuralNetwork()->getOutputAsVelocity().x, e->getNeuralNetwork()->getOutputAsVelocity().y);
 
         ImGui::End();
     }
@@ -165,11 +167,11 @@ void AISimulation::start()
 
             // Check if hovering mouse over an entity
             if(currentlySelectedEntityIndex == -1 && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-                if(e->sprite.getGlobalBounds().findIntersection(sf::FloatRect(sf::Vector2f(worldPos.x - 5.f, worldPos.y - 5.f), sf::Vector2f(20.f, 20.f)))) {
+                if(e->getHitbox().findIntersection(sf::FloatRect(sf::Vector2f(worldPos.x - 5.f, worldPos.y - 5.f), sf::Vector2f(20.f, 20.f)))) {
                     sf::RectangleShape indicator;
                     indicator.setOrigin(sf::Vector2f(16.f, 16.f));
-                    indicator.setSize(e->sprite.getGlobalBounds().size);
-                    indicator.setPosition(e->sprite.getPosition());
+                    indicator.setSize(sf::Vector2f(32, 32));
+                    indicator.setPosition(e->getLastPosition());
                     indicator.setOutlineThickness(3);
                     indicator.setOutlineColor(sf::Color::Green);
 
@@ -180,11 +182,11 @@ void AISimulation::start()
             }
 
             // In case entity is destroyed while inspected via GUI
-            if(e->hp == 0 && entityIndex == currentlySelectedEntityIndex) {
+            if(e->is_alive() == false && entityIndex == currentlySelectedEntityIndex) {
                 currentlySelectedEntityIndex = -1;
             }
 
-            window.draw(e->sprite);
+            e->draw(window);
         }
 
         for (auto& w : wayPoints) {

@@ -1,16 +1,25 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+
 #include <map>
 #include <iostream>
 
 #include "Neuron.hpp"
 #include "Math.hpp"
-#include "global.hpp"
 
-struct NeuralNet
+class NeuralNet
 {
+public:
 	NeuralNet() {
-		init();
+
+	}
+
+	NeuralNet(int n_input, int n_hidden, int n_hidden2, int n_output) {
+		neurons_input = n_input;
+		neurons_hidden = n_hidden;
+		neurons_hidden2 = n_hidden2;
+		neurons_output = n_output;
+
+		create_neural_network_map();
 	}
 
 	void randomConnection() {
@@ -28,8 +37,8 @@ struct NeuralNet
 	}
 
 	void initRand() {
-		destory();
-		init();
+		delete_neural_network_map();
+		create_neural_network_map();
 
 		for (int i = 0;i < randomInt(5000); i++) {
 			randomConnection();
@@ -42,12 +51,7 @@ struct NeuralNet
 		return &neurons.at(i.layer)[i.index];
 	}
 
-	const int neurons_input = 5;
-	const int neurons_hidden = 12;
-	const int neurons_hidden2 = 12;
-	const int neurons_output = 5;
-
-	void init() {
+	void create_neural_network_map() {
 		// Input
 		neurons.insert({ Input, std::vector<Neuron>(neurons_input)});
 		// Hidden layer
@@ -57,9 +61,9 @@ struct NeuralNet
 		neurons.insert({ Output, std::vector<Neuron>(neurons_output)});
 	}
 
-	void initBased(const NeuralNet cpy, int randomness) {  // pass by const ref to avoid copies
-		destory();
-		init();
+	void inherit_neural_network(const NeuralNet cpy, int randomness) {  // pass by const ref to avoid copies
+		delete_neural_network_map();
+		create_neural_network_map();
 
 		if(cpy.neurons.size() <= 0 || cpy.cons.size() <= 0) {
 			initRand(); 
@@ -69,19 +73,19 @@ struct NeuralNet
 		neurons = cpy.neurons;
 		cons = cpy.cons;
 
-		for (int i = 0; i < randomness; i++) {
+		for (int i = 0; i < randomInt(randomness); i++) {
 			randomConnection();
 		}
 
 		if (!cons.empty()) {
-			for (int i = 0; i < randomness; i++) {
-				cons[rand() % cons.size()].weight += randFloat();
+			for (int i = 0; i < randomInt(randomness); i++) {
+				cons[rand() % cons.size()].weight += randFloat() * randFloat();
 			}
 		}
 	}
 
 
-	void destory() {
+	void delete_neural_network_map() {
 		cons.clear();
 		neurons.clear();
 	}
@@ -118,7 +122,6 @@ struct NeuralNet
 		}
 	}
 
-
 	void setInput(int index, float value) {
 		if(index >= neurons_input) return;
 
@@ -132,15 +135,7 @@ struct NeuralNet
 	float getOutputFrom(int index) {
 		if(index >= neurons_output) return 0.f;
 
-		try {
-			return neurons.at(Output).at(index).value;
-		} catch(const std::exception& e) {
-			init();
-			initRand();
-			std::cerr << "error getOutputFrom: " << e.what() << "\n"; 
-		}
-
-		return 0.f;
+		return neurons.at(Output).at(index).value;
 	}
 
 	uint64_t getConnectionsCount() {
@@ -150,4 +145,9 @@ struct NeuralNet
 private:
 	std::map<Layer, std::vector<Neuron>> neurons;
 	std::vector<Connection> cons;
+
+	int neurons_input = 0;
+	int neurons_hidden = 0;
+	int neurons_hidden2 = 0;
+	int neurons_output = 0;
 };
