@@ -5,6 +5,7 @@
 			"expression" : "/home/lauri/Documents/Neural-Networks-master/src/*.cpp",
 			"paths" : 
 			[
+				"/home/lauri/Documents/Neural-Networks-master/src/Simulation.cpp",
 				"/home/lauri/Documents/Neural-Networks-master/src/Source.cpp"
 			],
 			"recurse" : true
@@ -17,7 +18,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/3.31.6/CMakeSystem.cmake"
+			"path" : "build/CMakeFiles/3.31.11/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -31,11 +32,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/3.31.6/CMakeCCompiler.cmake"
+			"path" : "build/CMakeFiles/3.31.11/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
+			"path" : "build/CMakeFiles/3.31.11/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -767,6 +768,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/usr/share/cmake/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/usr/share/cmake/Modules/FindOpenGL.cmake"
 		},
 		{
@@ -778,11 +784,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/share/cmake/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake/Modules/GNUInstallDirs.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

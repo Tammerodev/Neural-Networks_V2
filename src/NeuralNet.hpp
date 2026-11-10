@@ -87,19 +87,17 @@ struct NeuralNet
 	}
 
 	void update() {
-		// Make sure Output and Hidden layers exist
-		if (neurons.size() > 0) {
-			for (auto& n : neurons.at(Output)) {
-				n.value = 0.f;
-			}
-			for (auto& n : neurons.at(Hidden)) {
-				n.value = 0.f;
-			}
-			for (auto& n : neurons.at(Hidden2)) {
-				n.value = 0.f;
-			}
+		for (auto& con : cons) {
+			if(con.connectedFromIndex.layer == Input) continue;
+
+			neurons.at(con.connectedFromIndex.layer).at(con.connectedFromIndex.index) = 0.f;
+			neurons.at(con.connectedToIndex.layer).at(con.connectedToIndex.index) = 0.f;
 		}
 
+		for (auto& con : cons) {
+			if(con.connectedFromIndex.layer == Input)
+				neuronAtNIndex(con.connectedToIndex)->value += neuronAtNIndex(con.connectedFromIndex)->value * con.weight;
+		}
 
 		// Input => Hidden
 		for (auto& con : cons) {
@@ -149,7 +147,6 @@ struct NeuralNet
 		return cons.size();
 	}
 	
-
 private:
 	std::map<Layer, std::vector<Neuron>> neurons;
 	std::vector<Connection> cons;

@@ -1,6 +1,5 @@
 #pragma once 
 
-
 enum Layer {
 	Input, Hidden, Hidden2, Output
 };
@@ -39,6 +38,4 @@ struct Connection {
 	float weight = 0.f;
 	NeuronIndex connectedFromIndex;
 	NeuronIndex connectedToIndex;
-
-	int connectedFromLayer = 0;
 };

@@ -5,12 +5,12 @@
 
 #include "NeuralNet.hpp"
 
-sf::Texture texture;
-sf::Texture texture_damaged;
+inline sf::Texture texture;
+inline sf::Texture texture_damaged;
 
-sf::Vector2f spawn_point = {300,300};
+inline sf::Vector2f spawn_point = {300,300};
 
-void loadtexture() {
+inline void loadtexture() {
 	if(!texture.loadFromFile("img/Entity.png") ||
 		!texture_damaged.loadFromFile("img/Entity_damaged.png")) {
 

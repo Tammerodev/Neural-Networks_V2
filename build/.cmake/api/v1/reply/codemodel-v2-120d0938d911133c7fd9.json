@@ -143,7 +143,7 @@
 				{
 					"build" : "_deps/imgui-sfml-build",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.imgui-sfml-build-Debug-ed7b58c87d5291aed04f.json",
+					"jsonFile" : "directory-_deps.imgui-sfml-build-Debug-aed9da7c188af60820d6.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -216,14 +216,14 @@
 				{
 					"directoryIndex" : 8,
 					"id" : "ImGui-SFML::@0d4f94df99120bc7405e",
-					"jsonFile" : "target-ImGui-SFML-Debug-dd266bfd19b368e919bb.json",
+					"jsonFile" : "target-ImGui-SFML-Debug-72694191344bf2a1eba0.json",
 					"name" : "ImGui-SFML",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "NeuralNetworks::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NeuralNetworks-Debug-d25eb62cdca78c170f0f.json",
+					"jsonFile" : "target-NeuralNetworks-Debug-fb0d0d42b7e89e923c23.json",
 					"name" : "NeuralNetworks",
 					"projectIndex" : 0
 				},

@@ -61,7 +61,7 @@ add_library(ImGui-SFML::ImGui-SFML STATIC IMPORTED)
 set_target_properties(ImGui-SFML::ImGui-SFML PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "IMGUI_USER_CONFIG=\"imconfig-SFML.h\""
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "SFML::Graphics;OpenGL::GL"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenGL::GL>;SFML::Graphics"
 )
 
 # Load information for each installed configuration.
